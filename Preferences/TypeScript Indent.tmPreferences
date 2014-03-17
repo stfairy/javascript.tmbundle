@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Indentation</string>
 	<key>scope</key>
-	<string>source.js</string>
+	<string>source.ts</string>
 	<key>settings</key>
 	<dict>
 		<key>decreaseIndentPattern</key>
@@ -22,6 +22,6 @@
 	</string>
 	</dict>
 	<key>uuid</key>
-	<string>BC062860-3346-4D3B-8421-C5543F83D11F</string>
+	<string>90344780-AE0D-11E3-A5E2-0800200C9A66</string>
 </dict>
 </plist>

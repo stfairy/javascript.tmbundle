@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>comment</key>
-	<string>JavaScript Syntax: version 2.0</string>
+	<string>TypeScript Syntax</string>
 	<key>fileTypes</key>
 	<array>
-		<string>js</string>
-		<string>htc</string>
-		<string>jsx</string>
+		<string>ts</string>
 	</array>
 	<key>injections</key>
 	<dict>
-		<key>source.js - meta.ternary-if.js - string - comment</key>
+		<key>source.ts - meta.ternary-if.ts - string - comment</key>
 		<dict>
 			<key>patterns</key>
 			<array>
@@ -20,21 +18,19 @@
 					<key>match</key>
 					<string>(?&lt;!\w)[\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*(?=\s*:\s*function\b)</string>
 					<key>name</key>
-					<string>entity.name.function.js</string>
+					<string>entity.name.function.ts</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>(?&lt;!\w)[\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*(?=\s*:)</string>
 					<key>name</key>
-					<string>entity.name.attribute-name.js</string>
+					<string>entity.name.attribute-name.ts</string>
 				</dict>
 			</array>
 		</dict>
 	</dict>
-	<key>keyEquivalent</key>
-	<string>^~J</string>
 	<key>name</key>
-	<string>JavaScript</string>
+	<string>TypeScript</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -56,27 +52,27 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>meta.function.variable.js</string>
+					<string>meta.function.variable.ts</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.operator.js</string>
+					<string>keyword.operator.ts</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>storage.type.function.js</string>
+					<string>storage.type.function.ts</string>
 				</dict>
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function.js</string>
+					<string>entity.name.function.ts</string>
 				</dict>
 				<key>5</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.parameters.begin.js</string>
+					<string>punctuation.definition.parameters.begin.ts</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -88,11 +84,11 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.parameters.end.js</string>
+					<string>punctuation.definition.parameters.end.ts</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.function.js</string>
+			<string>meta.function.ts</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -105,7 +101,7 @@
 			<key>match</key>
 			<string>\b((0(x|X)[0-9a-fA-F]+)|([0-9]+(\.[0-9]+)?))\b</string>
 			<key>name</key>
-			<string>constant.numeric.js</string>
+			<string>constant.numeric.ts</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -115,7 +111,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.js</string>
+					<string>punctuation.definition.string.begin.ts</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -125,18 +121,18 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.js</string>
+					<string>punctuation.definition.string.end.ts</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.single.js</string>
+			<string>string.quoted.single.ts</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>match</key>
 					<string>\\(x\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)</string>
 					<key>name</key>
-					<string>constant.character.escape.js</string>
+					<string>constant.character.escape.ts</string>
 				</dict>
 			</array>
 		</dict>
@@ -148,7 +144,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.js</string>
+					<string>punctuation.definition.string.begin.ts</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -158,18 +154,18 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.js</string>
+					<string>punctuation.definition.string.end.ts</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.double.js</string>
+			<string>string.quoted.double.ts</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>match</key>
 					<string>\\(x\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)</string>
 					<key>name</key>
-					<string>constant.character.escape.js</string>
+					<string>constant.character.escape.ts</string>
 				</dict>
 			</array>
 		</dict>
@@ -179,13 +175,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.comment.js</string>
+					<string>punctuation.definition.comment.ts</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>\A(#!).*$\n?</string>
 			<key>name</key>
-			<string>comment.line.number-sign.shebang.js</string>
+			<string>comment.line.number-sign.shebang.ts</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -195,13 +191,13 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.comment.js</string>
+					<string>punctuation.definition.comment.ts</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>\*/</string>
 			<key>name</key>
-			<string>comment.block.js</string>
+			<string>comment.block.ts</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -211,7 +207,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.whitespace.comment.leading.js</string>
+					<string>punctuation.whitespace.comment.leading.ts</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -226,13 +222,13 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.comment.js</string>
+							<string>punctuation.definition.comment.ts</string>
 						</dict>
 					</dict>
 					<key>end</key>
 					<string>\n</string>
 					<key>name</key>
-					<string>comment.line.double-slash.js</string>
+					<string>comment.line.double-slash.ts</string>
 				</dict>
 			</array>
 		</dict>
@@ -240,43 +236,43 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(let|var)\b</string>
 			<key>name</key>
-			<string>storage.type.js</string>
+			<string>storage.type.ts</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\.)\b(get|set)\b</string>
 			<key>name</key>
-			<string>storage.modifier.js</string>
+			<string>storage.modifier.ts</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\.)\b(break|case|catch|continue|default|do|else|finally|for|if|return|switch|throw|try|while|yield)\b</string>
 			<key>name</key>
-			<string>keyword.control.js</string>
+			<string>keyword.control.ts</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\.)\b(delete|in|instanceof|new|typeof|void|with)\b</string>
 			<key>name</key>
-			<string>keyword.operator.js</string>
+			<string>keyword.operator.ts</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>!|%|&amp;|\*|\-\-|\-|\+\+|\+|~|===|==|=|!=|!==|&lt;=|&gt;=|&lt;&lt;=|&gt;&gt;=|&gt;&gt;&gt;=|&lt;&gt;|&lt;|&gt;|!|&amp;&amp;|\|\||\?\:|\*=|(?&lt;!\()/=|%=|\+=|\-=|&amp;=|\^=</string>
 			<key>name</key>
-			<string>keyword.operator.js</string>
+			<string>keyword.operator.ts</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\.)\b(debugger)\b</string>
 			<key>name</key>
-			<string>keyword.other.js</string>
+			<string>keyword.other.ts</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(Array|Boolean|Date|Error|EvalError|Function|Number|Object|RangeError|ReferenceError|RegExp|String|SyntaxError|TypeError|URIError)\b</string>
 			<key>name</key>
-			<string>support.class.js</string>
+			<string>support.class.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -284,7 +280,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(Attr|CharacterData|Comment|CompositionEvent|CustomEvent|Document|DocumentFragment|DocumentType|DOMError|DOMException|DOMImplementation|DOMParser|DOMString|DOMTimestamp|DOMSettableTokenList|DOMStringList|DOMTokenList|Element|Event|EventTarget|FocusEvent|HTMLCollection|KeyboardEvent|MouseEvent|MutationObserver|MutationRecord|Node|NodeFilter|NodeIterator|NodeList|ProcessingInstruction|Range|Text|TextEvent|TreeWalker|UIEvent|WheelEvent|XMLDocument)\b</string>
 			<key>name</key>
-			<string>support.class.dom.js</string>
+			<string>support.class.dom.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -292,7 +288,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(CDATASection|DOMConfiguration|DOMErrorHandler|DOMImplementationList|DOMImplementationSource|DOMLocator|DOMObject|DOMUserData|Entity|EntityReference|MutationEvent|NamedNodeMap|NameList|Notation|TypeInfo|UserDataHandler)\b</string>
 			<key>name</key>
-			<string>invalid.deprecated.dom.js</string>
+			<string>invalid.deprecated.dom.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -300,7 +296,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(ArrayBuffer|DataView|Float32Array|Float64Array|Int8Array|Int16Array|Int32Array|TypedArray|Uint8Array|Uint16Array|Uint32Array|Uint8ClampedArray)\b</string>
 			<key>name</key>
-			<string>support.class.dom.js</string>
+			<string>support.class.dom.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -308,7 +304,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(Blob|File|FileList|FileReader)\b</string>
 			<key>name</key>
-			<string>support.class.dom.js</string>
+			<string>support.class.dom.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -316,7 +312,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(FormData|ProgressEvent|XMLHttpRequest|XMLHttpRequestUpload)\b</string>
 			<key>name</key>
-			<string>support.class.dom.js</string>
+			<string>support.class.dom.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -324,7 +320,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(EventSource)\b</string>
 			<key>name</key>
-			<string>support.class.dom.js</string>
+			<string>support.class.dom.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -332,7 +328,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(CSS|CSSCharsetRule|CSSImportRule|CSSPageRule|CSSRule|CSSRuleList|CSSStyleDeclaration|CSSStyleRule|CSSStyleSheet|MediaList|Stylesheet|StyleSheetList)\b</string>
 			<key>name</key>
-			<string>support.class.dom.js</string>
+			<string>support.class.dom.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -340,7 +336,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(Screen)\b</string>
 			<key>name</key>
-			<string>support.class.dom.js</string>
+			<string>support.class.dom.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -348,7 +344,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(CSSFontFaceRule)\b</string>
 			<key>name</key>
-			<string>support.class.dom.js</string>
+			<string>support.class.dom.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -356,7 +352,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(SVGAElement|SVGAltGlyphDefElement|SVGAltGlyphElement|SVGAltGlyphItemElement|SVGAngle|SVGAnimateColorElement|SVGAnimateElement|SVGAnimateMotionElement|SVGAnimateTransformElement|SVGAnimatedAngle|SVGAnimatedBoolean|SVGAnimatedEnumeration|SVGAnimatedInteger|SVGAnimatedLength|SVGAnimatedLengthList|SVGAnimatedNumber|SVGAnimatedNumberList|SVGAnimatedPreserveAspectRatio|SVGAnimatedRect|SVGAnimatedString|SVGAnimatedTransformList|SVGAnimationElement|SVGCircleElement|SVGClipPathElement|SVGColor|SVGComponentTransferFunctionElement|SVGCursorElement|SVGDefsElement|SVGDescElement|SVGDocument|SVGElement|SVGElementInstance|SVGElementInstanceList|SVGEllipseElement|SVGFEBlendElement|SVGFEColorMatrixElement|SVGFEComponentTransferElement|SVGFECompositeElement|SVGFEConvolveMatrixElement|SVGFEDiffuseLightingElement|SVGFEDisplacementMapElement|SVGFEDistantLightElement|SVGFEFloodElement|SVGFEFuncAElement|SVGFEFuncBElement|SVGFEFuncGElement|SVGFEFuncRElement|SVGFEGaussianBlurElement|SVGFEImageElement|SVGFEMergeElement|SVGFEMergeNodeElement|SVGFEMorphologyElement|SVGFEOffsetElement|SVGFEPointLightElement|SVGFESpecularLightingElement|SVGFESpotLightElement|SVGFETileElement|SVGFETurbulenceElement|SVGFilterElement|SVGFontElement|SVGFontFaceElement|SVGFontFaceFormatElement|SVGFontFaceNameElement|SVGFontFaceSrcElement|SVGFontFaceUriElement|SVGForeignObjectElement|SVGGElement|SVGGlyphElement|SVGGlyphRefElement|SVGGradientElement|SVGHKernElement|SVGImageElement|SVGLength|SVGLengthList|SVGLineElement|SVGLinearGradientElement|SVGMPathElement|SVGMarkerElement|SVGMaskElement|SVGMatrix|SVGMetadataElement|SVGMissingGlyphElement|SVGNumber|SVGNumberList|SVGPaint|SVGPathElement|SVGPathSeg|SVGPathSegArcAbs|SVGPathSegArcRel|SVGPathSegClosePath|SVGPathSegCurvetoCubicAbs|SVGPathSegCurvetoCubicRel|SVGPathSegCurvetoCubicSmoothAbs|SVGPathSegCurvetoCubicSmoothRel|SVGPathSegCurvetoQuadraticAbs|SVGPathSegCurvetoQuadraticRel|SVGPathSegCurvetoQuadraticSmoothAbs|SVGPathSegCurvetoQuadraticSmoothRel|SVGPathSegLinetoAbs|SVGPathSegLinetoHorizontalAbs|SVGPathSegLinetoHorizontalRel|SVGPathSegLinetoRel|SVGPathSegLinetoVerticalAbs|SVGPathSegLinetoVerticalRel|SVGPathSegList|SVGPathSegMovetoAbs|SVGPathSegMovetoRel|SVGPatternElement|SVGPoint|SVGPointList|SVGPolygonElement|SVGPolylineElement|SVGPreserveAspectRatio|SVGRadialGradientElement|SVGRect|SVGRectElement|SVGRenderingIntent|SVGSVGElement|SVGScriptElement|SVGSetElement|SVGStopElement|SVGStringList|SVGStyleElement|SVGSwitchElement|SVGSymbolElement|SVGTRefElement|SVGTSpanElement|SVGTextContentElement|SVGTextElement|SVGTextPathElement|SVGTextPositioningElement|SVGTitleElement|SVGTransform|SVGTransformList|SVGUnitTypes|SVGUseElement|SVGUseElement|SVGVKernElement|SVGViewElement|SVGViewSpec|SVGZoomEvent)\b</string>
 			<key>name</key>
-			<string>support.class.dom.js</string>
+			<string>support.class.dom.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -364,7 +360,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(WebGLActiveInfo|WebGLBuffer|WebGLContextEvent|WebGLFramebuffer|WebGLProgram|WebGLRenderbuffer|WebGLRenderingContext|WebGLShader|WebGLShaderPrecisionFormat|WebGLTexture|WebGLUniformLocation)\b</string>
 			<key>name</key>
-			<string>support.class.dom.js</string>
+			<string>support.class.dom.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -372,7 +368,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(Audio|BarProp|DOMStringMap|ErrorEvent|FileError|HTMLAllCollection|HTMLAnchorElement|HTMLAppletElement|HTMLAreaElement|HTMLAudioElement|HTMLBRElement|HTMLBaseElement|HTMLBodyElement|HTMLButtonElement|HTMLCanvasElement|HTMLDListElement|HTMLDataElement|HTMLDataListElement|HTMLDetailsElement|HTMLDialogElement|HTMLDirectoryElement|HTMLDivElement|HTMLEmbedElement|HTMLFieldSetElement|HTMLFontElement|HTMLFormControlsCollection|HTMLFormElement|HTMLFrameElement|HTMLFrameSetElement|HTMLHRElement|HTMLHeadElement|HTMLHeadingElement|HTMLHtmlElement|HTMLIFrameElement|HTMLImageElement|HTMLInputElement|HTMLKeygenElement|HTMLLIElement|HTMLLabelElement|HTMLLegendElement|HTMLLinkElement|HTMLMapElement|HTMLMarqueeElement|HTMLMediaElement|HTMLMetaElement|HTMLMeterElement|HTMLModElement|HTMLOListElement|HTMLObjectElement|HTMLOptGroupElement|HTMLOptionElement|HTMLOptionsCollection|HTMLOutputElement|HTMLParagraphElement|HTMLParamElement|HTMLPreElement|HTMLProgressElement|HTMLQuoteElement|HTMLScriptElement|HTMLSelectElement|HTMLSour|HTMLSpanElement|HTMLStyleElement|HTMLTableCaptionElement|HTMLTableCellElement|HTMLTableColElement|HTMLTableDataCellElement|HTMLTableElement|HTMLTableHeaderCellElement|HTMLTableRowElement|HTMLTableSectionElement|HTMLTextAreaElement|HTMLTimeElement|HTMLTitleElement|HTMLTrackElement|HTMLUListElement|HTMLUnknownElement|HTMLVideoElement|HashChangeEvent|History|Image|Location|MediaController|MediaError|MouseEvent|Navigator|Option|PageTransitionEvent|PopStateEvent|TextTrack|TextTrackCue|TextTrackCueList|TextTrackList|TimeRanges|TrackEvent|UIEvent|ValidityState|Window)\b</string>
 			<key>name</key>
-			<string>support.class.dom.js</string>
+			<string>support.class.dom.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -380,7 +376,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(applicationCache|closed|console|crypto|document|external|frameElement|frames|history|innerHeight|innerWidth|length|location|locationbar|menubar|name|navigator|offscreenBuffering|onabort|onafterprint|onbeforeprint|onbeforeunload|onblur|oncancel|oncanplay|oncanplaythrough|onchange|onclick|onclose|oncuechange|ondblclick|ondrag|ondragend|ondragenter|ondragexit|ondragleave|ondragover|ondragstart|ondrop|ondurationchange|onemptied|onended|onerror|onfocus|onhashchange|oninput|oninvalid|onkeydown|onkeypress|onkeyup|onload|onloadeddata|onloadedmetadata|onloadstart|onmessage|onmousedown|onmouseenter|onmouseleave|onmousemove|onmouseout|onmouseover|onmouseup|onmousewheel|onoffline|ononline|onpagehide|onpageshow|onpause|onplay|onplaying|onpopstate|onprogress|onratechange|onreset|onresize|onscroll|onseeked|onseeking|onselect|onshow|onstalled|onstorage|onsubmit|onsuspend|ontimeupdate|onunload|onvolumechange|onwaiting|opener|outerHeight|outerWidth|pageXOffset|pageYOffset|parent|personalbar|postMessage|screen|screenX|screenY|scrollbars|scrollX|scrollY|self|status|statusbar|toolbar|top|window)\b</string>
 			<key>name</key>
-			<string>support.constant.dom.js</string>
+			<string>support.constant.dom.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -388,25 +384,25 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(addEventListener|alert|atob|blur|btoa|clearInterval|clearTimeout|close|confirm|dispatchEvent|doNotTrack|find|focus|getComputedStyle|getMatchedCSSRules|getSelection|matchMedia|moveBy|moveTo|open|openDatabase|print|prompt|removeEventListener|resizeBy|resizeTo|scroll|scrollBy|scrollTo|setInterval|setTimeout|showModalDialog|stop)\b</string>
 			<key>name</key>
-			<string>support.function.dom.js</string>
+			<string>support.function.dom.ts</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\.)\b(captureEvents|defaultStatus|defaultstatus|releaseEvents)\b</string>
 			<key>name</key>
-			<string>invalid.deprecated.dom.js</string>
+			<string>invalid.deprecated.dom.ts</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\.)\b(JSON|Math)\b</string>
 			<key>name</key>
-			<string>support.constant.js</string>
+			<string>support.constant.ts</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(decodeURI|decodeURIComponent|encodeURI|encodeURIComponent|eval|isFinite|isNaN|parseFloat|parseInt|uneval)\b</string>
 			<key>name</key>
-			<string>support.function.js</string>
+			<string>support.function.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -414,7 +410,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(class|const|enum|export|extends|import|super)\b</string>
 			<key>name</key>
-			<string>invalid.illegal.js</string>
+			<string>keyword.control.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -422,19 +418,19 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(implements|interface|package|private|protected|public|static)\b</string>
 			<key>name</key>
-			<string>invalid.deprecated.js</string>
+			<string>keyword.control.ts</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(false|Infinity|NaN|null|true|undefined)\b</string>
 			<key>name</key>
-			<string>constant.language.js</string>
+			<string>constant.language.ts</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\.)\b(this)\b</string>
 			<key>name</key>
-			<string>variable.language.js</string>
+			<string>variable.language.ts</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -453,7 +449,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.string.begin.js</string>
+							<string>punctuation.definition.string.begin.ts</string>
 						</dict>
 					</dict>
 					<key>end</key>
@@ -463,16 +459,16 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.string.end.js</string>
+							<string>punctuation.definition.string.end.ts</string>
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>string.regexp.js</string>
+					<string>string.regexp.ts</string>
 					<key>patterns</key>
 					<array>
 						<dict>
 							<key>include</key>
-							<string>source.js.regexp</string>
+							<string>source.ts.regexp</string>
 						</dict>
 					</array>
 				</dict>
@@ -482,7 +478,7 @@
 			<key>match</key>
 			<string>\;</string>
 			<key>name</key>
-			<string>punctuation.terminator.statement.js</string>
+			<string>punctuation.terminator.statement.ts</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -490,12 +486,12 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.begin.js</string>
+					<string>punctuation.section.scope.begin.ts</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.end.js</string>
+					<string>punctuation.section.scope.end.ts</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -507,19 +503,19 @@
 			<key>match</key>
 			<string>\{|\}</string>
 			<key>name</key>
-			<string>meta.brace.curly.js</string>
+			<string>meta.brace.curly.ts</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\(|\)</string>
 			<key>name</key>
-			<string>meta.brace.round.js</string>
+			<string>meta.brace.round.ts</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\[|\]</string>
 			<key>name</key>
-			<string>meta.brace.square.js</string>
+			<string>meta.brace.square.ts</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -527,7 +523,7 @@
 			<key>end</key>
 			<string>:</string>
 			<key>name</key>
-			<string>meta.ternary-if.js</string>
+			<string>meta.ternary-if.ts</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -542,7 +538,7 @@
 			<key>match</key>
 			<string>(?&lt;=new )([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)(?!\w)</string>
 			<key>name</key>
-			<string>support.class.js</string>
+			<string>support.class.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -550,7 +546,7 @@
 			<key>match</key>
 			<string>(?&lt;= instanceof )([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)(?!\w)</string>
 			<key>name</key>
-			<string>support.class.js</string>
+			<string>support.class.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -558,7 +554,7 @@
 			<key>match</key>
 			<string>(?&lt;!\w)([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)(?=\.prototype\b)</string>
 			<key>name</key>
-			<string>support.class.js</string>
+			<string>support.class.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -566,7 +562,7 @@
 			<key>match</key>
 			<string>(?&lt;=\.)(prototype)\b</string>
 			<key>name</key>
-			<string>keyword.other.js</string>
+			<string>keyword.other.ts</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -574,7 +570,7 @@
 			<key>match</key>
 			<string>(?&lt;!\w)([\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*)(?=\()</string>
 			<key>name</key>
-			<string>meta.function.js</string>
+			<string>meta.function.ts</string>
 		</dict>
 	</array>
 	<key>repository</key>
@@ -596,7 +592,7 @@
 							<key>match</key>
 							<string>\G[\p{L}\p{Nl}$_][\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}\x{200C}\x{200D}]*</string>
 							<key>name</key>
-							<string>variable.parameter.function.js</string>
+							<string>variable.parameter.function.ts</string>
 						</dict>
 					</array>
 				</dict>
@@ -604,8 +600,8 @@
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>source.js</string>
+	<string>source.ts</string>
 	<key>uuid</key>
-	<string>93E017CC-6F27-11D9-90EB-000D93589AF6</string>
+	<string>A33EB310-AE0D-11E3-A5E2-0800200C9A66</string>
 </dict>
 </plist>

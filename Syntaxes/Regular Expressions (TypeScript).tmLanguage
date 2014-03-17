@@ -7,7 +7,7 @@
 	<key>hideFromUser</key>
 	<true/>
 	<key>name</key>
-	<string>Regular Expressions (JavaScript)</string>
+	<string>Regular Expressions (TypeScript)</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -230,8 +230,8 @@
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>source.js.regexp</string>
+	<string>source.ts.regexp</string>
 	<key>uuid</key>
-	<string>AC8679DE-3AC7-4056-84F9-69A7ADC29DDD</string>
+	<string>99F25410-AE0D-11E3-A5E2-0800200C9A66</string>
 </dict>
 </plist>
