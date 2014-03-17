@@ -264,7 +264,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(debugger)\b</string>
+			<string>(?&lt;!\.)\b(debugger|string|number)\b</string>
 			<key>name</key>
 			<string>keyword.other.ts</string>
 		</dict>
@@ -408,7 +408,7 @@
 			<key>comment</key>
 			<string>Keywords reserved for future use but now are unused.</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(class|const|enum|export|extends|import|super)\b</string>
+			<string>(?&lt;!\.)\b(module|class|const|enum|export|extends|import|super)\b</string>
 			<key>name</key>
 			<string>keyword.control.ts</string>
 		</dict>
